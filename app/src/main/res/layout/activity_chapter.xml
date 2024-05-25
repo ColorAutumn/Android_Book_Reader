@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 顶部横条 -->
+    <RelativeLayout
+        android:id="@+id/readingTopBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?colorPrimary">
+
+        <!-- 返回按钮 -->
+        <ImageView
+            android:id="@+id/readingTopBackImg"
+            android:layout_width="53dp"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:contentDescription="TODO"
+            android:padding="12dp"
+            android:src="@drawable/back" />
+
+        <!-- 章节标题 -->
+        <TextView
+            android:id="@+id/readingChapterTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- 内容显示区域 -->
+    <ScrollView
+        android:id="@+id/readingScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/readingContentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:scrollbars="vertical"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <!-- 底部控制栏 -->
+    <LinearLayout
+        android:id="@+id/readingBottomBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <!-- 上一章按钮 -->
+        <Button
+            android:id="@+id/readingPrevChapterButton"
+            style="?android:attr/button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/last_chapter" />
+
+        <!-- 下一章按钮 -->
+        <Button
+            android:id="@+id/readingNextChapterButton"
+            style="?android:attr/button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/next_chapter" />
+    </LinearLayout>
+
+</LinearLayout>

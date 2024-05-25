@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ReadBookApplication</string>
+    <string name="latestChapter">最新章节</string>
+    <string name="last_chapter">上一章</string>
+    <string name="next_chapter">下一章</string>
+    <string name="start_reading">开始阅读</string>
+    <string name="add_to_bookshelf">加入书架</string>
+    <string name="navBookShelf">书架</string>
+    <string name="navLibrary">书库</string>
+    <string name="libraryNone">书架为空</string>
+</resources>
